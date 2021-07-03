@@ -12,7 +12,7 @@ This repository reads the outputs from `terraform-github-repository` to determin
 Note: **Board Members only**
 
 import the state file using:
-As per [documentation](https://registry.terraform.io/providers/integrations/github/latest/docs/resources/repository_webhook#import) the number is the id of the webhook which can be found from the individual webhook page.
+As per [documentation on repository webhooks](https://registry.terraform.io/providers/integrations/github/latest/docs/resources/repository_webhook#import) the number is the id of the webhook which can be found from the individual webhook page.
 
 ```bash
 terraform import module.cookbook_webhooks[\"bot-trainer\"].github_repository_webhook.label_validator bot-trainer/305575727
